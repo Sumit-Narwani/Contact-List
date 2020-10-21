@@ -1,3 +1,11 @@
+/*
+    Created:
+        Sumit Narwani 21/10/2020
+*/
+
+export { Trie }
+
+
 class TrieNode{
     constructor(){
         this.children = Array(10).fill(null);
