@@ -101,7 +101,7 @@ class Trie{
 
 
 
-
+    // Deleting a Node ( Contact )
     del(number, pos=0, node = this.root){
         
         // Case when reached the leaf node, then set it to null
