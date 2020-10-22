@@ -16,7 +16,7 @@ onload = function () {
     details = details.split(",");
 
     // Checks for incorrect input
-    if (details !== 2) {
+    if (details.length !== 2) {
       alert("Incorrectly formatted input");
       return;
     }
@@ -57,7 +57,7 @@ onload = function () {
 
     // execute a function when someone writes in the text field
     inp.addEventListener("input", function (e) {
-      let a; // OUTER HTML: variable for listed content with html-content
+      let a, // OUTER HTML: variable for listed content with html-content
       val = this.value;
 
       // close any already open lists of autocompleted values
@@ -68,7 +68,7 @@ onload = function () {
       currentFocus = -1;
 
       // Create a DIV element that will contain the items(values)
-      a = document.createElement("div");
+      a = document.createElement("DIV");
 
       a.setAttribute("id", this.id + "autocomplete-list");
       a.setAttribute("class", "autocomplete-items list-group text-left");

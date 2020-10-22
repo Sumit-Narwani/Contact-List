@@ -103,7 +103,7 @@ class Trie{
         }
 
         this.res = [];
-        this.findAll(this.parent);
+        this.findAll(this.current);
         return this.res;
     }
 
